@@ -1,12 +1,7 @@
 # Connectly Django API
-Backend REST API for a social media platform built with Django and Django REST Framework.
+Connectly is a backend REST API built with Django and Django REST Framework for managing users and posts. 
 
-Connectly is a backend API for managing users and posts, demonstrating core backend development concepts including CRUD operations, validation, relational data handling, API security, and scalable design patterns.
-
-The API also includes social interaction features such as likes and comments, Google OAuth authentication, and a personalized news feed with sorting and pagination.
-
-All endpoints were tested using Postman.
-
+It demonstrates core backend concepts such as CRUD operations, validation, relational data handling, API security, and design patterns. The API also supports social features like likes, comments, Google OAuth authentication, and a personalized news feed with sorting and pagination. All endpoints were tested using Postman.
 
 ## Project Branch
 The **final and latest tested version** of this project is located in the branch:
