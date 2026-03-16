@@ -5,7 +5,7 @@ It demonstrates core backend concepts such as CRUD operations, validation, relat
 
 ## Project Branch
 The **final and latest tested version** of this project is located in the branch:
-**Milestone-2**
+**main**
 
 All features for Milestone 2 (Likes, Comments, Google OAuth integration, and News Feed with sorting and pagination) were consolidated, merged, committed, and pushed to this branch.
 
