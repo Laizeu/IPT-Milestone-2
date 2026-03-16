@@ -11,7 +11,10 @@ All features for Milestone 2 (Likes, Comments, Google OAuth integration, and New
 
 To use the latest version of the project:
 ```bash
-git checkout Milestone-2
+Switch to the main branch and pull the latest version
+
+git checkout main
+git pull origin main
 ```
 ## AI Disclosure Statement
 AI tools (such as ChatGPT) were used to assist with documentation formatting, explanation of concepts, and guidance for testing API endpoints.  
@@ -74,20 +77,21 @@ Tools
 ## Setup & Run
 1. Clone the repo
    ```
-   git clone https://github.com/Laizeu/Integrative-Programming-and-Technologies---connectly-django-api.git
+   git clone https://github.com/Laizeu/IPT-Milestone-2.git
    ```
 
 2. Navigate to the folder
    ```
-   cd Integrative-Programming-and-Technologies---connectly-django-api
+   cd IPT-Milestone-2
    ```
 
 3. Switch to the Final Project Branch
    ```
-   git checkout Milestone-2
+   git checkout main
+   git pull origin main
    ```
 
-4. Create & activate virtual environment
+4. Create and activate virtual environment
 
    **Mac/Linux**
    ```
@@ -115,6 +119,7 @@ Tools
 
 6. Run migrations
    ```
+   python manage.py makemigrations
    python manage.py migrate
    ```
 
