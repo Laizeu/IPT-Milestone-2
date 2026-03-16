@@ -95,11 +95,7 @@ Tools
    source env/bin/activate
    ```
    **Windows**
-   > If Python is not installed, install [uv](https://docs.astral.sh/uv/) first:
-   > ```
-   > powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-   > ```
-   > Then install Python and create the virtual environment:
+   > Install Python and create the virtual environment:
    > ```
    > uv python install 3.12
    > uv venv env
