@@ -13,7 +13,7 @@ To use the latest version of the project:
 ```bash
 git checkout Milestone-2
 ```
-# AI Disclosure Statement
+## AI Disclosure Statement
 AI tools (such as ChatGPT) were used to assist with documentation formatting, explanation of concepts, and guidance for testing API endpoints.  
 
 All system design, implementation, testing, and integration of features (CRUD operations, validation, relationships, security, design patterns, likes, comments, Google OAuth, and news feed functionality) were implemented and verified by the project team.
@@ -44,7 +44,7 @@ The project demonstrates key backend engineering concepts including REST API des
 - Users can comment on posts
 - Retrieve comments for a specific post
 - Post details include like count and comment count
-###  Authentication
+### Authentication
 - Google OAuth login integration
 - Secure login using Google accounts
 ### News Feed System
@@ -72,30 +72,72 @@ Tools
 
 
 ## Setup & Run
-1. Clone the repo 
-   `https://github.com/Laizeu/Integrative-Programming-and-Technologies---connectly-django-api.git`
+1. Clone the repo
+   ```
+   git clone https://github.com/Laizeu/Integrative-Programming-and-Technologies---connectly-django-api.git
+   ```
+
 2. Navigate to the folder
-   `cd connectly_project`
+   ```
+   cd Integrative-Programming-and-Technologies---connectly-django-api
+   ```
+
 3. Switch to the Final Project Branch
-   `git checkout Milestone-2`
-2. Create & activate virtual environment
-   `python3 -m venv env`
-   Mac
-   `source env/bin/activate`
-   Windows
-   `.venv\Scripts\activate`
-3. Install dependencies
-   `pip install -r requirements.txt`
-4. Run migrations
-   `python manage.py migrate`
-5. Create a Superuser (for authentication testing)
-   `python manage.py createsuperuser`
-5. Start server
+   ```
+   git checkout Milestone-2
+   ```
+
+4. Create & activate virtual environment
+
+   **Mac/Linux**
+   ```
+   python3 -m venv env
+   source env/bin/activate
+   ```
+   **Windows**
+   > If Python is not installed, install [uv](https://docs.astral.sh/uv/) first:
+   > ```
+   > powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+   > ```
+   > Then install Python and create the virtual environment:
+   > ```
+   > uv python install 3.12
+   > uv venv env
+   > env\Scripts\activate
+   > ```
+
+5. Install dependencies
+
+   **Mac/Linux**
+   ```
+   pip install -r requirements.txt
+   ```
+   **Windows (with uv)**
+   ```
+   uv pip install -r requirements.txt
+   ```
+
+6. Run migrations
+   ```
+   python manage.py migrate
+   ```
+
+7. Create a Superuser (for authentication testing)
+   ```
+   python manage.py createsuperuser
+   ```
+
+8. Start server
+
    Standard server
-   `python3 manage.py runserver`
+   ```
+   python manage.py runserver
+   ```
    HTTPS server
-   `python3 manage.py runserver_plus --cert-file cert.pem --key-file key.pem`
-   Server will run to:
+   ```
+   python manage.py runserver_plus --cert-file cert.pem --key-file key.pem
+   ```
+   Server will run at:
    `http://127.0.0.1:8000/`
 
 
@@ -208,7 +250,7 @@ Authorization: Bearer <access_token>
 ### Example News Feed Request
 `GET /posts/feed/?page=1&ordering=-created_at`
 Returns a paginated list of posts ordered by newest first.
-```
+
 Example Feed Response
 ```json
 {
@@ -255,7 +297,7 @@ Testing Documentation:
 
 Contents include:
 - Postman API request/response screenshots
-- Exported JSON Postman Collention file
+- Exported JSON Postman Collection file
 
 ## File Structure
 ```text
@@ -316,3 +358,4 @@ Includes Likes, Comments, Google OAuth authentication, and News Feed with sortin
 ### Author
 ```md
 IPT Group 10
+```
